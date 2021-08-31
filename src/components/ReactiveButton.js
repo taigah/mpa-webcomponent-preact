@@ -1,8 +1,9 @@
 import { h } from "preact"
 import { useState, useCallback } from "preact/hooks"
 
-export function ReactiveButton() {
-  const [value, setValue] = useState(1)
+export function ReactiveButton(props) {
+  const initialValue = parseInt(props["initial-value"] ?? "1", 10)
+  const [value, setValue] = useState(initialValue)
   const onclick = useCallback(() => {
     setValue(old => old + 1)
   })
