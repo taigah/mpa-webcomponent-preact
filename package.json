@@ -13,6 +13,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "preact": "^10.5.14"
+    "preact": "^10.5.14",
+    "preact-custom-element": "^4.2.1"
   }
 }
